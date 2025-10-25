@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/Joinlogowhite.png">
+    <link rel="stylesheet" href="../styles/task.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../styles/joincolor.css">
+    <link rel="stylesheet" href="../styles/mediaquerry.css">
+    <link rel="stylesheet" href="../styles/mediaquerryTask.css">
+    <link rel="stylesheet" href="../styles/boardTask.css">
+    <title>addTask</title>
+
+</head>
+
+<body onload="init()">
+    <div class="overDisplay">
+        <aside class="mainDesignAside">
+            <img class="mainDesignAsideImg" src="../img/Joinlogowhite.png">
+            <div class="mainDesignAsideLinks">
+                <div class="asideMenuArea">
+                    <div id="summary" class="asideMenu"><a href="../html/summary.html"><img src="../img/Summary.png"
+                                alt="">Summary</a></div>
+                    <div id="task" class="asideMenu active"><a href="../html/task.html"><img class="activeTask"
+                                src="../img/Add task.png" alt="">Add
+                            Task</a></div>
+                    <div id="board" class="asideMenu "><a href="../html/board.html"> <img src="../img/Board.png"
+                                alt="">Board</a>
+                    </div>
+                    <div id="contact" class="asideMenu"><a href="../html/contact.html"><img src="../img/Contacts.png"
+                                alt="">Contacts</a></div>
+                </div>
+                <div class="legacyMenu">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Legal Notice</a>
+                </div>
+            </div>
+        </aside>
+        <div class="mainDesign">
+            <div class="header"><span class="changeMedia">Kanban Projekt Management Tool</span>
+                <div class="headerContentRightSide">
+                    <a href="../html/help.html">
+                        <img class="picHelp" src="../img/help.png">
+                    </a>
+                    <div class="picSm" id="burgerToggle"><span id="userIni"></span></div>
+                    <div class="burger-menu" id="burgerMenu">
+                        <div class="burger-content">
+                            <h2 class="helpOff"><a href="../html/help.html">Help</a></h2>
+                            <h2><a href="../html/legecy.html">Legal Notice</a></h2>
+                            <h2><a href="../html/privacy.html">Privacy Policy</a></h2>
+                            <h2 onclick="logout()">Log Out</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contentTask">
+                <div class="heading">Add Task</div>
+                <form id="myForm">
+                    <div class="formular">
+                        <div class="leftSubmition">
+                            <div class="title">
+                                <div class="smallHead"><span>Title <sup>*</sup></span>
+                                </div>
+                                <input id="titleText" class="titleTxt" type="text" placeholder="Enter a title"
+                                    oninput="clearFailAddTask('titleText', 'failName')">
+                                <div id="failName" class="fail selectHide"><span>Please enter a correct Task in text
+                                        Format.</span></div>
+                            </div>
+                            <div class="description">
+                                <div class="smallHead">Description</div>
+                                <textarea rows="4" cols="37" placeholder="Enter a Description" id="desText"
+                                    class="descriptionTxt"></textarea>
+                            </div>
+                            <div class="assignCntcts">
+                                <label for="contacts">Assigned to</label>
+                                <div class="assignment" id="assign" onclick="showCheckBoxes()">
+                                    Select contacts to assign
+                                    <img class="arrow" id="arrow" src="../img/dropArrow.svg">
+                                </div>
+                                <div id="allCntcts" class="checkboxes">
+                                </div>
+                                <div class="selCntctsDiv">
+                                    <div id="selCntcts" class="showSel"></div>
+                                    <div id="moreIcon" class="moreBtn d_noneImg" onclick="scrollOn()"><img class="moreImg" src="../img/arrow.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partition"></div>
+                        <div class="rightSubmition">
+                            <div class="dueDate">
+                                <div class="smallHead"><span>Due Date <sup>*</sup></span>
+                                </div>
+                                <input class="dueDateTxt" type="text" id="dateData" placeholder="dd/mm/yyyy"
+                                    onfocus="(type='date')">
+                                <div id="failDueDate" class="fail selectHide"><span>Please select a correct Due
+                                        Date.</span></div>
+                            </div>
+                            <div id="priority" class="prio">
+                                <div class="smallHead">Prio</div>
+                                <div class="prioForm">
+                                    <input type="radio" name="priority" value="urgent" id="urgent">
+                                    <label class="prioBtn" for="urgent">Urgent <img
+                                            src="../img/Priorityhigh.png"></label>
+                                    <input type="radio" name="priority" value="medium" id="medium" checked>
+                                    <label class="prioBtn" for="medium">Medium <img
+                                            src="../img/Prioritymiddel.png"></label>
+                                    <input type="radio" name="priority" value="low" id="low">
+                                    <label class="prioBtn" for="low">Low <img src="../img/Prioritylow.png"></label>
+                                </div>
+                            </div>
+                            <div class="assign">
+                                <label for="hiddenSelect"><span>Category<sup>*</sup></span></label>
+                                <div class="assignments" id="customSelect" onclick="toggleDropdown()">
+                                    Select task category
+                                </div>
+                                <select id="hiddenSelect">
+                                    <option value="" disabled selected>Select task category</option>
+                                    <option value="technical">Technical Task</option>
+                                    <option value="userStory">User Story</option>
+                                </select>
+                                <div id="dropdown" class="selectItems selectHide">
+                                    <div data-value="technical" onclick="selectOption(this)">Technical Task</div>
+                                    <div data-value="userStory" onclick="selectOption(this)">User Story</div>
+                                </div>
+                                <div id="failCategory" class="fail selectHide"><span>Please select a Category for
+                                        Task.</span></div>
+                            </div>
+
+                            <div id="inputSubClass" class="subtasks">
+                                <div class="smallHead">Subtasks</div>
+                                <div class="inputWrapper" onclick="renderSubTask()"><input class="subtasksTxt"
+                                        placeholder="Add new subtask" type="text">
+                                    <img class="tsksGen" src="../img/subTaskIcon.svg">
+                                </div>
+                            </div>
+                            <ul class="a" id="subTsksBoard"></ul>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div><sup>* </sup>This field is required</div>
+                        <div class="submitionButtons">
+                            <button class="secondary" type="reset" onclick="resetAll()">
+                                <span>Clear</span> </button>
+                            <button type="submit" class="primaryCheck">
+                                <span>Create Task</span><img class="primevect" src="../img/check.svg">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="taskDoneIcon" class="subTaskIcon">
+        <div class="doneDiv "><img id="imgTest" class="doneIcon " src="../img/addedTask.png"></div>
+    </div>
+    <script src="../../script.js"></script>
+    <script src="../js/task.js"></script>
+    <script src="../js/task2.js"></script>
+    <script src="../js/taskTemplate.js"></script>
+    <script src="../js/submenu.js"></script>
+</body>
+
+</html>

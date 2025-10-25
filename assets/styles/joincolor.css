@@ -1,0 +1,150 @@
+.b-purple {
+    background-color: #9327FF;
+}
+
+.b-hellpurple {
+    background-color: #6E52FF;
+}
+
+.b-pink {
+    background-color: #FC71FF;
+}
+
+.b-gelb {
+    background-color: #FFBB2B;
+}
+
+.b-turkis {
+    background-color: #1FD7C1;
+}
+
+.b-rosa {
+    background-color: #FF5EB3;
+}
+
+.b-hellblau {
+    background-color: #00BEE8;
+}
+
+.b-rotorange {
+    background-color: #FF745E;
+}
+
+.b-hellorange {
+    background-color: #FFA35E;
+}
+
+.b-dunkelgelb {
+    background-color: #FFC701;
+}
+
+.b-blau {
+    background-color: #0038FF;
+}
+
+.b-rot {
+    background-color: #FF7A00;
+}
+
+.b-rot2 {
+    background-color: #FF4646;
+}
+
+.b-neongelb {
+    background-color: #FFE62B;
+}
+
+.b-neongrün {
+    background-color: #C3FF2B;
+}
+
+.b-neonorange {
+    background-color: #FFBB2B;
+}
+
+.bg_User {
+    background-color: #0838FF;
+    width: 113px;
+    height: 27px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_Tech {
+    display: flex;
+    align-items: center;
+    background-color: #1ed7c1;
+    width: 144px;
+    height: 27px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgInfo_User {
+    background-color: #0838FF;
+    width: 164px;
+    height: 36px;
+    font-size: 23px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgInfo_Tech {
+    display: flex;    
+    background-color: #1ed7c1;
+    width: 208px;
+    height: 36px;
+    font-size: 23px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_low {
+    background-image: url("../img/Prioritylow.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.bg_medium {
+    background-image: url("../img/Prioritymiddel.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.bg_urgent {
+    background-image: url("../img/Priorityhigh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 32px;
+    height: 32px;
+}
+
+.box0 {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+

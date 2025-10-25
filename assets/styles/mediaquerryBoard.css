@@ -1,0 +1,572 @@
+
+@media(max-width:563px) {
+    
+    .infoTitle span {
+        font-size: 16px;
+        width: 150px
+    }
+
+    .popupEdit {
+        width: 90%;
+        height: 500px;
+    }
+
+    .prioForm {
+        width: 100%;
+        gap: 0px;
+    }
+
+    .prioBtn {
+        width: 60%;
+        height: 40px;
+        font-size: 12px !important;
+        gap: 5px;
+    }
+
+
+
+    .labelContact {
+        scale: 0.9;
+    }
+
+    .contactNameEdit p {
+        font-size: 12px;
+    }
+
+    .liSubTask {
+        scale: 0.9;
+    }
+
+    .editAdd {
+        scale: 0.8;
+    }
+
+    .contactDrop {
+        font-size: 14px;
+    }
+
+    .substart2 {
+        font-size: 14px;
+    }
+
+    .infoTitle {
+        width: 100%;
+    }
+
+    .infoTitle img {
+        margin-left: 30px;
+    }
+
+    .popupTitleInfo {
+        width: 220px;
+        font-size: 20px !important;
+        min-height: 50px;
+    }
+
+    .descriptionInfo {
+        width: 220px;
+        min-height: 24px;
+        padding-right: 20px;
+        margin-bottom: 10px;
+        flex-shrink: 0;
+    }
+
+    .boxinfo {
+        width: 42px;
+        height: 42px;
+    }
+
+    .contactInfo {
+        width: 100%
+    }
+
+    .contactInfo span {
+        font-size: 18px;
+        width: 180px;
+    }
+
+    .contactInfoData {
+        width: 400px;
+        overflow: auto;
+        padding: 0;
+        flex-shrink: 0;
+    }
+
+    .contactInfoData::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .contactInfoData::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        min-height: 20px;
+        cursor: pointer;
+    }
+
+    .contactInfoData::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    .contactArea {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .subtaskInfo {
+        width: 100%;
+        gap: 0;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .subtaskAreaData {
+        width: 220px;
+        height: 100px;
+        overflow: auto;
+        margin-top: 10px;
+        scroll-behavior: smooth;
+        flex-shrink: 0;
+    }
+
+    .subtaskTitle {
+        height: 35px;
+    }
+
+    .subtaskAreaData span {
+        display: flex;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .editInfo {
+        justify-content: end;
+        width: 100%;
+    }
+
+    .bgInfo_user {
+        width: 100px;
+        height: 20px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .infoTitle {
+        width: 100%;
+    }
+
+    .substart2{
+        width: 100%;
+    }
+
+    .subAddIn{
+        width: 100%;
+    }
+
+    .popupArea {
+        position: fixed;
+    }
+   
+    .subtaskAreaData {
+        width: 100%;
+        height: 100px;
+        overflow: auto;
+        margin-top: 10px;
+        scroll-behavior: smooth;
+        flex-shrink: 0;
+    }
+
+    .popupTaskInfo {
+        width: 90%;
+        height: 500px;
+        gap: 24px;
+        overflow: auto;
+        padding: 48px 40px 48px 40px;
+    }
+
+    .popupTaskInfo::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .popupTaskInfo::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .popupTaskInfo::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    .popupEdit {
+        width: 90%;
+        height: 500px;
+    }
+
+    .prioForm {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    
+    .contactInfoData {
+        width: 100%;
+        height: 150px;
+    }
+
+    .popupTitleInfo {
+        width: 100%;
+        font-size: 36px;
+        min-height: 50px;
+        flex-shrink: 0;
+    }
+
+    .descriptionInfo {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .dateInfo {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .prioInfo {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .prioInfoData {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .contactInfo span {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .contactInfo {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .subtaskInfo {
+        width: 100%;
+
+        gap: 0;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .contactInfoData {
+        padding: 0;
+    }
+
+    .subtaskInfo span:nth-of-type(1) {
+        font-size: 16px;        
+    }
+
+    .overDisplay {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .searchBar {
+        width: 100%;
+        padding-right: 10px;
+    }
+
+    .emptySearch {
+        justify-content: start;
+        top: 12px;
+        padding: 20px;
+    }
+
+    .emptyBoardArea {
+        width: 100%;
+    }
+
+    .dragAndDropBoard {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .dragAndDropBoardArea {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        overflow: auto;
+        min-height: 48px;
+        scrollbar-width: none;
+    }
+
+    .dragAndDropBoardArea::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .dragAndDropBoardArea:hover {
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+
+    .headlineDrag {
+        padding-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 32px;
+    }
+
+    .headlineDrag span {
+        font-size: 27px;
+        color: #2A3647;
+    }
+
+    .headlineDrag img {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    .taskAreaMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .headlinbar {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+
+    .headlinbar span {
+        font-size: 46px;
+
+    }
+
+    .btnBoardTask {
+        display: none;
+    }
+
+    .mobileBtnAdd {
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        cursor: pointer;
+        padding-left: 20px;
+    }
+
+    .inputArea input {
+        width: 100%;
+    }
+
+    .inputArea {
+        width: 97%;
+    }
+
+    .inputSearch {
+        width: 100%;
+    }
+
+    .inputImgArea {
+        padding-right: 10px;
+    }
+
+    html {
+        max-height: 100%;
+    }
+}
+
+@media(min-width: 801px) and (max-width:1300px) {
+    .taskArea {
+        width: 1050px;
+    }
+
+    .popupTitleInfo{
+        font-size: 50px;
+        min-height: 100px;
+    }
+    
+    .content{
+        min-height: 170vh !important; 
+    }
+
+    .overDisplay {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .searchBar {
+        margin-right: 10px;
+    }
+
+    .emptySearch {
+        padding-left: 50px;
+    }
+
+    .emptyBoardArea {
+        width: 100%;
+    }
+
+    .popupArea {
+        position: fixed;
+    }
+
+    .dragAndDropBoard {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .dragAndDropBoardArea {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        overflow: auto;
+        min-height: 48px;
+        scrollbar-width: none;
+    }
+
+    .popupTaskInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dragAndDropBoardArea::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .dragAndDropBoardArea:hover {
+        overflow: auto;
+        scrollbar-width: thin;
+    }
+
+    .headlineDrag {
+        padding-top: 15px;
+        margin-bottom: 15px;
+        width: 96%;
+        height: 32px;
+    }
+
+    .headlineDrag span {
+        font-size: 27px;
+        color: #2A3647;
+    }
+
+    .headlineDrag img {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+    }
+
+    .taskAreaMobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mobileBtnAdd {
+        display: none;
+    }
+}
+
+@media(min-width:1301px) and (max-width:1439px) {
+
+    .emptySearch {
+        padding-left: 90px;
+    }
+
+    .taskName span:nth-of-type(2){
+        display: none;
+    }
+
+    .dragAndDropBoard {
+        width: calc(1208px - 128px);
+        gap: 8px;
+    }
+
+    .headlineDrag {
+        width: 230px;
+    }
+
+    .dragAndDropBoardArea {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .dragAndDropBoardArea::-webkit-scrollbar {
+        display: none;
+    }
+
+    .arrowImg {
+        display: none;
+    }
+
+    .mobileBtnAdd {
+        display: none;
+    }
+
+    .popupTaskInfo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .dragAndDropBoard {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .headlineDrag {
+        width: 230px;
+    }
+}
+
+@media(min-width:1439px) {
+    .content {
+        padding: 0 64px 0 64px;
+        max-width: 1208px;
+    }
+
+    .taskName span:nth-of-type(2){
+        display: none;
+    }
+
+    .dragAndDropBoardArea {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+
+    .dragAndDropBoardArea::-webkit-scrollbar {
+        display: none;
+    }
+
+    .arrowImg {
+        display: none;
+    }
+
+    .mobileBtnAdd {
+        display: none;
+    }
+}
+
+@media(min-width:1439px) {
+    .content {
+        padding: 0 64px 0 64px;
+        max-width: 1208px;
+    }
+
+    .popupTaskInfo {
+        display: flex;
+        justify-content: center;
+    }
+}

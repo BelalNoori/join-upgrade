@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/Joinlogowhite.png">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../styles/signin.css">
+    <link rel="stylesheet" href="../styles/meduaquerySignIn.css">
+    <link rel="stylesheet" href="../styles/fonts.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="../img/logo.png">
+    </div>
+
+    <div class="loginarea">
+        <div class="loginheadline">
+            <a href="../../index.html">
+                <img class="arrowleft" src="../img/arrow-left-line.png">
+            </a>
+            <span class="textline">Sign up</span>
+            <img class="underlineLogin" src="../img/unterstrichvector.png">
+        </div>
+
+        <form id="registrationForm">
+            <div class="custome-input">
+                <input id="name" class="inputSignUp" type="name"  name="name" placeholder="Name" oninput="nameInputVali()">
+                <img class="socialicons" src="../img/person.png">
+                <div id="failName" class="fail d_none"><span>Please enter a correct name</span>
+                </div>
+            </div>
+                <div class="custome-input">
+                    <input id="email" class="inputSignUp " type="email" name="email" placeholder="Email" oninput="emailInputVali()">
+                    <img class="socialicons" src="../img/mail.png">
+                    <div id="failEmail" class="fail d_none "><span>Please enter a correct email,example alex@test.de</span></div>
+                </div>
+                <div class="custome-input">
+                    <input type="password" class="inputSignUp" id="password" name="password" placeholder="Password">
+                    <img class="socialicons" src="../img/lock.png">
+                </div>
+                <div class="custome-input">
+                    <input  type="password" class="inputSignUp" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" oninput="passwordInputVali()">
+                    <img class="socialicons" src="../img/lock.png">
+                    <div id="failPassword" class="fail d_none "><span>Please enter the same password</span></div>
+                </div>
+                <div class="check-container">
+                    <label class="checkLabel" for="privacyPolicy">
+                        <input type="checkbox" id="privacyPolicy">
+                        <p>I accept the <a href="../html/privacy2.html" class="policycolor">Privacy policy</a></p>
+                    </label>
+                </div>
+                <div class="btns">
+                    <button class=" btnOff" id="submitButton" disabled>Sign up</button>
+                </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footercontent">
+            <a href="../html/privacy2.html">
+                <h3>Privacy Policy</h3>
+            </a>
+            <a href="../html/legecy2.html">
+                <h3>Legal notice</h3>
+            </a>
+        </div>
+    </footer>
+    <script src="../js/regist.js"></script>
+</body>
+
+</html>

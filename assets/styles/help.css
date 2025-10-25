@@ -1,0 +1,144 @@
+:root {
+    --sideheader-main-color: #2A3647;
+    --sideheader-hover-color: #2A3D59;
+    --sideheader-active-color: #091931;
+    --content-main-color: #F6F7F8;
+    --sideheader-font-color: #CDCDCD;
+    --button-hover-color: #29ABE2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+.content {
+    width: 100%;    
+    padding:  64px 64px 0 64px;
+    background-color: var(--content-main-color);
+    height: calc(100vh - 100px );
+    overflow: auto;   
+    
+}
+
+.text-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    max-width: 1440px;
+}
+
+.text-arrow img  {
+    object-fit: cover;
+    width: 37px;
+    height: 37px;
+}
+
+.text-2 h1 {
+    font-size: 61px;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 73.2px;
+}
+
+.text-2 h2 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32.4px;
+}
+
+.ptext {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-2 p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.scroll-container-text2 {
+    height: 100%;
+    max-width: calc(1440px - 360px );
+    
+}
+
+.text-2::-webkit-scrollbar {
+    width: 6px;
+}
+
+.text-2::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.text-2::-webkit-scrollbar-button {
+    display: none;
+}
+
+.arrow-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.arrow-sticky:hover {
+    background-color: #eeeeee;
+    border-radius: 50%;
+}
+
+.guides {
+    display: flex;
+    gap: 55px;
+}
+
+.guide {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.tophead {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.joinON {
+    color: var(--button-hover-color);
+}
+
+@media(max-width:1300px) {
+    .content{
+        padding: 0;
+        height: 200vh;
+    }
+
+    html{
+        width: 100%;
+    }
+    .text-2{
+        height: 100%;
+    }
+}
+
+@media (max-width:800px){
+    .content {
+        padding-left: 10px;
+        padding-right: 0px;        
+    }
+}
+
+@media (min-width:800px) and (max-width:1299px){
+    .content {
+        padding-left: 64px;
+        padding-right: 0px;        
+    }
+}
+
+

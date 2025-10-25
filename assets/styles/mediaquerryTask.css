@@ -1,0 +1,298 @@
+@media(max-width: 1300px) {
+    .contentTask {
+        overflow: auto;
+        margin-bottom: 98px;
+        height: 100%;
+    }
+
+    .overDisplay {
+        flex-direction: column-reverse;
+    }
+
+    form {
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .checkboxes {
+        width: 440px;
+        height: 118px;
+    }
+
+    .selectItems {
+        width: 440px;
+    }
+
+}
+
+@media(max-width: 1020px) {
+    .formular {
+        gap: 28px;
+    }
+
+    .info {
+        width: 90%;
+        padding: 0px 20px;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:975px) {
+    .leftSubmition {
+        width: 340px;
+    }
+
+    .rightSubmition {
+        width: 340px;
+    }
+
+    .checkboxes {
+        width: 340px;
+    }
+
+    .selectItems {
+        width: 340px;
+    }
+
+    .tsksGen {
+        margin-left: 294px;
+    }
+
+    .tsksBtns {
+        margin-left: 282px;
+    }
+
+    .prioBtns {
+        gap: 5px !important;
+    }
+
+    .prioBtn {
+        width: 110px !important;
+        gap: 6px !important;
+    }
+}
+
+@media(max-width:800px) {
+
+    .contentTask {
+        overflow: auto;
+    }
+
+    .formular {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .leftSubmition {
+        width: 440px;
+        gap: 14px;
+    }
+
+    .assignment {
+        padding-right: 8px;
+    }
+
+    .selectItems {
+        width: 440px;
+    }
+
+    .partition {
+        display: none;
+    }
+
+    .rightSubmition {
+        width: 440px;
+        gap: 14px;
+        margin-top: 22px;
+    }
+
+    .checkboxes {
+        width: 440px;
+    }
+
+    .prioBtns {
+        gap: 16px !important;
+    }
+
+    .prioBtn {
+        width: 136px !important;
+    }
+
+    .tsksGen {
+        margin-left: 392px;
+    }
+
+    .tsksBtns {
+        margin-left: 384px;
+    }
+
+    .heading {
+        margin-top: 26px;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 22px;
+    }
+
+    .asideMenu:nth-of-type(2) {
+        padding: 0;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:718px) {
+    .info {
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .info div:nth-of-type(1) {
+        margin-right: 332px;
+    }
+}
+
+@media (max-width:620px) {
+
+    .heading {
+        text-align: start;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .secondary {
+        display: none;
+    }
+
+    .info div:nth-of-type(1) {
+        margin-right: 0px;
+    }
+
+    .primaryCheck {
+        width: 183px;
+    }
+}
+
+@media(max-width:460px) {
+
+    .leftSubmition {
+        width: 396px;
+    }
+
+    .rightSubmition {
+        width: 396px;
+    }
+
+    .info {
+        width: 98%;
+    }
+
+    .checkboxes {
+        width: 396px;
+    }
+
+    .selectItems {
+        width: 396px;
+    }
+
+    .tsksGen {
+        margin-left: 348px;
+    }
+
+    .tsksBtns {
+        margin-left: 348px;
+    }
+}
+
+@media(max-width:425px) {
+
+    .heading {
+        font-size: 47px;
+    }
+
+    .prioForm {
+        scale: 1;
+        gap: 10px !important;
+        padding: 0px 2px;
+    }
+
+    .leftSubmition {
+        width: 318px;
+    }
+
+    .rightSubmition {
+        width: 318px;
+    }
+
+    .prioBtns {
+        gap: 4px !important;
+    }
+
+    .prioBtn {
+        width: 104px !important;
+        font-size: 18px !important;
+        gap: 2px !important;
+    }
+
+    .tsksBtns {
+        margin-left: 264px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .checkboxes {
+        width: 318px;
+    }
+
+    .selectItems {
+        width: 318px;
+    }
+
+    .tsksGen {
+        margin-left: 274px;
+    }
+
+    .primaryCheck {
+        font-size: 15px;
+        width: 136px;
+    }
+
+    ul.a {
+        width: 95%;
+    }
+}
+
+@media(max-width:338px) {
+
+    .leftSubmition {
+        width: 304px;
+    }
+
+    .rightSubmition {
+        width: 304px;
+    }
+
+    .prioForm {
+        gap: 4px;
+    }
+
+    .checkboxes {
+        width: 304px;
+    }
+
+    .selectItems {
+        width: 304px;
+    }
+
+    .tsksGen {
+        margin-left: 270px;
+    }
+
+    .tsksBtns {
+        margin-left: 254px;
+    }
+}
